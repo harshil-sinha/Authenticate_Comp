@@ -22,7 +22,7 @@ function Search() {
     e.preventDefault();
     setError('');
     try {
-      const res = await axios.get(`http://www.omdbapi.com/?i=${id}&=process.env.${API_KEY}`);
+      const res = await axios.get(`http://www.omdbapi.com/?process.env.${API_KEY}&s=${query}`);
       setResults(res.data.Search || []);
       if (res.data.Error) {
         setError(res.data.Error);
