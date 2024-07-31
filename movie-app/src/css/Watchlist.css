@@ -1,0 +1,27 @@
+.watchlist-page {
+    padding: 20px;
+  }
+  
+  .watchlist-page h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .movie-list .card {
+    position: relative;
+  }
+  
+  .movie-list .btn-danger {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 20px);
+  }
+  
