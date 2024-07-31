@@ -10,7 +10,7 @@ function MovieDetails() {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const res = await axios.get(`http://www.omdbapi.com/?i=${id}&=${API_KEY}`);
+         const res = await axios.get(`http://www.omdbapi.com/?i=${id}&=process.env.${API_KEY}`);
         setMovie(res.data);
       } catch (error) {
         console.error('Error fetching movie details:', error);
